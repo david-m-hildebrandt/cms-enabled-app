@@ -40,11 +40,11 @@ angular.module('myApp.cms-resource-controller', [])
             'accountOverview_banner_top': {
                 'en': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-EN-HD.jpg',
-                    'url': "https://www.rogers.com/web/myrogers/device-upgrade"
+                    'url': "http://www.rogers.com/consumer/wireless/travel"
                 },
                 'fr': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-FR-HD.jpg',
-                    'url': "https://www.rogers.com/web/myrogers/device-upgrade"
+                    'url': "http://www.rogers.com/consumer/wireless/travel?setLanguage=fr"
                 },
             }
         }

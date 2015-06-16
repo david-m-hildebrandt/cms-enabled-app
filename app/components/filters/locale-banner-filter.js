@@ -14,11 +14,11 @@ angular.module('myApp.filters.locale-banner-filter', [])
         };
     }])
 
-    .filter('bannerImageHref', [function () {
+    .filter('bannerImageUrl', [function () {
         return function (resource, language) {
             if (language === 'fr') {
-                return resource.fr.href;
+                return resource.fr.url;
             }
-            return resource.en.href;
+            return resource.en.url;
         };
     }])
