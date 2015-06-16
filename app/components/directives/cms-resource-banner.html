@@ -1,4 +1,5 @@
 <div>
-    <a ng-href="{{resource | bannerImageUrl : language}}">
-    <image ng-src="{{resource | bannerImageSource : language}}"/>
-</a></div>
+    <a ng-href="{{resource | locale : language : 'url' }}">
+        <image ng-src="{{resource | locale : language : 'imageSource' }}" alt="{{resource | locale : language : 'alt' }}"/>
+    </a>
+</div>

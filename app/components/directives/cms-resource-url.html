@@ -1,2 +1,6 @@
-<div><p>{{resource | urlBeforeLinkText : language}} <a ng-href="{{resource | urlHref : language}}"> {{resource | urlLinkText :
-    language }}</a>{{resource | urlAfterLinkText : language}}</p></div>
+<div>
+    <p>{{resource | locale : language: 'beforeLinkText' }} <a ng-href="{{resource | locale : language: 'url' }}">
+        {{resource | locale :
+        language : 'linkText'}}</a>{{resource | locale : language: 'afterLinkText'}}
+    </p>
+</div>

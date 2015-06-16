@@ -40,14 +40,18 @@ angular.module('myApp.cms-resource-controller', [])
             'accountOverview_banner_top': {
                 'en': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-EN-HD.jpg',
-                    'url': "http://www.rogers.com/consumer/wireless/travel?setLanguage=en"
+                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=en"',
+                    'alt': 'Beautiful travel scene with selfie action ongoing.'
                 },
                 'fr': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-FR-HD.jpg',
-                    'url': "http://www.rogers.com/consumer/wireless/travel?setLanguage=fr"
+                    'url': "http://www.rogers.com/consumer/wireless/travel?setLanguage=fr",
+//                    'alt': 'Belle sc\u00E8ne de Voyage avec action selfie en cours.'
+                    'alt': 'Belle sc\u00E8ne.'
                 },
             }
         }
+
 
         $scope.language = 'fr';
 

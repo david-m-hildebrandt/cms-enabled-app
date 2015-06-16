@@ -37,3 +37,4 @@ angular.module('myApp.cms-resource-banner', []).directive('cmsResourceBanner', f
     };
 
 });
+

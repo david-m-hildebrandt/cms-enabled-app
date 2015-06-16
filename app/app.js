@@ -8,9 +8,7 @@ angular.module('myApp', [
     'myApp.cms-resource',
     'myApp.cms-resource-url',
     'myApp.cms-resource-banner',
-    'myApp.filters.locale-filter',
-    'myApp.filters.locale-url-filter',
-    'myApp.filters.locale-banner-filter'
+    'myApp.filters.locale-filter'
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/view1'});
