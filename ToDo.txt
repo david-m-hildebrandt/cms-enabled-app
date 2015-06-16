@@ -1,0 +1,3 @@
+Create simple first page
+-perhaps using router
+-add a cms controller
