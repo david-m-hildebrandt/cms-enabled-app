@@ -38,3 +38,14 @@ angular.module('myApp.cms-resource-banner', []).directive('cmsResourceBanner', f
 
 });
 
+angular.module('myApp.cms-resource-modal-video', []).directive('cmsResourceModalVideo', function () {
+    return {
+        restrict: 'EA',
+        scope: {
+            resource: '=key',
+            language: '='
+        },
+        templateUrl: 'components/directives/cms-resource-modal-video.html'
+    };
+
+});

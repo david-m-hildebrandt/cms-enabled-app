@@ -40,18 +40,38 @@ angular.module('myApp.cms-resource-controller', [])
             'accountOverview_banner_top': {
                 'en': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-EN-HD.jpg',
-                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=en"',
+                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=en',
                     'alt': 'Beautiful travel scene with selfie action ongoing.'
                 },
                 'fr': {
                     'imageSource': 'https://www.rogers.com/web/totes/images/roam-FR-HD.jpg',
-                    'url': "http://www.rogers.com/consumer/wireless/travel?setLanguage=fr",
+                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=fr',
 //                    'alt': 'Belle sc\u00E8ne de Voyage avec action selfie en cours.'
                     'alt': 'Belle sc\u00E8ne.'
+                },
+            },
+            'accountOverview_banner_bottom': {
+                'en': {
+                    'imageSource': 'https://www.rogers.com/web/totes/images/preview-totes-HD-EN.jpg',
+                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=en',
+                    'alt': 'Beautiful travel scene with selfie action ongoing.',
+//                    'videoLink': 'https://www.youtube.com/embed/yQhrPek1KJw?autoplay=1&showinfo=0&rel=0&controls=0'
+                    'videoLink': 'https://www.youtube.com/embed/pjyfMCTAqKU?autoplay=1&showinfo=0&rel=0&controls=0'
+                },
+                'fr': {
+                    'imageSource': 'https://www.rogers.com/web/totes/images/preview-totes-HD-FR.jpg',
+                    'url': 'http://www.rogers.com/consumer/wireless/travel?setLanguage=fr',
+//                    'alt': 'Belle sc\u00E8ne de Voyage avec action selfie en cours.'
+                    'alt': 'Belle sc\u00E8ne.',
+//                    'videoLink': 'https://www.youtube.com/embed/sQi8PxSD-sA?autoplay=1&showinfo=0&rel=0&controls=0'
+                    'videoLink': 'https://www.youtube.com/embed/pjyfMCTAqKU?autoplay=1&showinfo=0&rel=0&controls=0'
                 },
             }
         }
 
+        $scope.dismissVideo = function () {
+            $modalInstance.dismiss('cancel');
+        }
 
         $scope.language = 'fr';
 

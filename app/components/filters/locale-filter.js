@@ -5,22 +5,27 @@
 
 angular.module('myApp.filters.locale-filter', [])
 
-    .filter('locale', [function () {
+    .filter('locale', ['$sce', function ($sce) {
 
         return function (resource, language, property) {
 
             if (property) {
-                if (language === 'fr') {
-                    return resource.fr[property];
+                if (property === 'videoLink') {
+                    if (language === 'fr') {
+                        return $sce.trustAsResourceUrl(resource.fr[property]);
+                    }
+                    return $sce.trustAsResourceUrl(resource.en[property]);
+                } else {
+                    if (language === 'fr') {
+                        return resource.fr[property];
+                    }
+                    return resource.en[property];
                 }
-                return resource.en[property];
-
             } else {
                 if (language === 'fr') {
                     return resource.fr;
                 }
                 return resource.en;
-
             }
         };
 

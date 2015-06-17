@@ -8,6 +8,7 @@ angular.module('myApp', [
     'myApp.cms-resource',
     'myApp.cms-resource-url',
     'myApp.cms-resource-banner',
+    'myApp.cms-resource-modal-video',
     'myApp.filters.locale-filter'
 ]).
     config(['$routeProvider', function ($routeProvider) {
